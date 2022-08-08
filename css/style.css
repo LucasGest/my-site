@@ -71,6 +71,16 @@ main {
   padding: 0px 10px;
 }
 
+.bg {
+  background: var(--blue);
+  position: absolute;
+  z-index: -4;
+  top: 0;
+  right: 0;
+  width: 900px;
+  height: 100vh;
+}
+
 /* GENERAL RULES */
 
 .bgDisplay {
@@ -89,14 +99,14 @@ main {
 .display {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-items: end;
+  justify-items: center;
   margin-top: 200px;
   background-color: transparent;
 }
 
 .display svg {
   width: 50%;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   color: var(--blue);
 }
 
@@ -119,15 +129,13 @@ main {
 .display .textWritting p {
   line-height: 30px;
   margin: 0;
+  margin-bottom: 70px;
+  font-size: 22px;
 }
 
 .display .textWritting p span {
   color: var(--blue);
   font-weight: 600;
-}
-
-.display .btn {
-  margin: 50px 0px 0px;
 }
 
 .display .btn ul li {
@@ -140,19 +148,21 @@ main {
   text-decoration: none;
   color: black;
   border: solid black 1px;
-  padding: 10px 20px;
+  padding: 15px 30px;
 }
 
 .display .btn ul li a.btn_contact {
   background-color: var(--blue);
   color: white;
   border: none;
+  border-radius: 10px;
 }
 
 .display .btn ul li a.btn_explore {
   background-color: transparent;
   border: var(--blue) solid 1px;
   color: var(--blue);
+  border-radius: 10px;
 }
 
 /* PRESENTATION */
@@ -332,17 +342,6 @@ footer .image img {
 
 /* FOOTER */
 
-/* FORM */
-.bg {
-  background: var(--blue);
-  position: absolute;
-  z-index: -4;
-  top: 0;
-  right: 0;
-  width: 900px;
-  height: 100vh;
-}
-
 /* Mentions légales */
 
 .container-mention {
@@ -404,11 +403,11 @@ footer .image img {
   color: var(--blue);
 }
 
-p {
+.container-mention p {
   margin: 20px;
 }
 
-p a.back-to-home {
+.container-mention p a.back-to-home {
   text-decoration: none;
   color: white;
   background: var(--blue);
