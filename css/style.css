@@ -1,0 +1,415 @@
+/* GENERAL RULES */
+
+:root {
+  --text: "Roboto", sans-serif;
+  --blue: #7481ec;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  cursor: url("../img/pointer/cursor_black.svg"), auto;
+}
+
+h1,
+h2,
+h3,
+p,
+li,
+a {
+  font-family: var(--text);
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p,
+li,
+a {
+  font-size: 18px;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: white;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+}
+
+/* Règles par 'class' */
+
+.transition {
+  margin: 300px 0px 100px;
+}
+
+.transition_bis {
+  margin: 100px 0px 100px;
+}
+
+.transition h2,
+.transition_bis h2 {
+  text-align: center;
+  color: var(--blue);
+  text-transform: uppercase;
+  margin: 50px 0px;
+}
+
+.transition h2 span,
+.transition_bis h2 span {
+  color: black;
+  opacity: 0.3;
+  padding: 0px 10px;
+}
+
+/* GENERAL RULES */
+
+.bgDisplay {
+  position: absolute;
+  z-index: -7;
+  opacity: 7%;
+  top: 0;
+  left: 0;
+  background-image: url("../img/icons/MotifLucasSite.svg");
+  width: 100%;
+  height: 100vh;
+}
+
+/* HEADER */
+
+.display {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: end;
+  margin-top: 200px;
+  background-color: transparent;
+}
+
+.display svg {
+  width: 50%;
+  margin-bottom: 40px;
+  color: var(--blue);
+}
+
+.display img {
+  width: 30%;
+  transform: rotateY(180deg);
+  padding: 10px;
+  align-self: flex-end;
+}
+
+.display .textWritting {
+  align-self: center;
+  width: 600px;
+}
+
+.display .textWritting h1 {
+  display: none;
+}
+
+.display .textWritting p {
+  line-height: 30px;
+}
+
+.display .textWritting p span {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.display .btn {
+  margin: 50px 0px 0px;
+}
+
+.display .btn ul li {
+  display: inline;
+  list-style: none;
+  padding-right: 40px;
+}
+
+.display .btn ul li a {
+  text-decoration: none;
+  color: black;
+  border: solid black 1px;
+  padding: 10px 20px;
+}
+
+.display .btn ul li a.btn_contact {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+}
+
+.display .btn ul li a.btn_explore {
+  background-color: transparent;
+  border: var(--blue) solid 1px;
+  color: var(--blue);
+}
+
+/* PRESENTATION */
+
+#presentation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+#presentation .imageContent img {
+  width: 60%;
+}
+
+#presentation .content p {
+  text-indent: 10%;
+  text-align: justify;
+  margin: 0px 100px;
+  line-height: 28px;
+  padding: 10px;
+}
+
+#presentation .content p.slt {
+  font-size: 36px;
+  color: var(--blue);
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-indent: 0%;
+}
+
+/* PRESENTATION */
+
+/* COMPETENCES */
+
+.containerCompetences {
+  display: grid;
+  grid-template-areas:
+    "div_left div_one"
+    "div_left div_two";
+  margin-left: auto;
+  margin-right: auto;
+  column-gap: 70px;
+  margin-bottom: 100px;
+  width: 1200px;
+}
+
+.containerCompetences .content-left {
+  width: 300px;
+  grid-area: div_left;
+}
+
+.containerCompetences .content-left p {
+  color: gray;
+}
+
+.containerCompetences .content-left h3 {
+  color: var(--blue);
+  text-align: left;
+  margin: 0px 0px 30px;
+  border-bottom: 1px var(--blue) solid;
+  padding: 0px 0px 20px;
+}
+
+.containerCompetences .content-left .card {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.containerCompetences .content-left .card img {
+  width: 100%;
+}
+
+.containerCompetences .content-left .card h3 {
+  padding-top: 10px;
+  text-align: center;
+  margin: 15px 0px 5px;
+  padding: 0;
+  border: none;
+}
+
+.containerCompetences .content-left .card p {
+  padding: 10px 0px;
+  font-size: 16px;
+}
+
+.containerCompetences .content-p {
+  height: 380px;
+  grid-area: div_one;
+}
+
+.containerCompetences .content-p p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  text-align: justify;
+  text-indent: 40px;
+  line-height: 25px;
+}
+
+.containerCompetences .content-p h3 {
+  color: var(--blue);
+  margin: 0px 0px 30px;
+  border-bottom: 1px var(--blue) solid;
+  padding: 0px 0px 20px;
+}
+
+.containerCompetences .listesCompetences {
+  grid-area: div_two;
+  text-align: center;
+  height: 200px;
+}
+
+.containerCompetences .listesCompetences h3 {
+  text-align: left;
+  color: var(--blue);
+  border-bottom: solid var(--blue) 1px;
+  padding: 0px 0px 20px;
+  margin: 0px 0px 30px;
+}
+
+.containerCompetences .listesCompetences ul li {
+  display: inline;
+  padding: 30px;
+}
+
+.containerCompetences .listesCompetences img {
+  width: 10%;
+  padding: 10px;
+}
+
+/* COMPETENCES */
+
+/* FOOTER */
+
+.foot {
+  background-color: var(--blue);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  align-items: center;
+}
+
+footer h1 {
+  color: white;
+  padding-bottom: 60px;
+}
+
+footer ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer .reseaux_sociaux ul li {
+  display: inline;
+}
+
+footer .reseaux_sociaux ul li a img {
+  width: 7%;
+}
+
+footer .image img {
+  width: 12%;
+  transform: rotateY(180deg);
+}
+
+/* FOOTER */
+
+/* FORM */
+.bg {
+  background: var(--blue);
+  position: absolute;
+  z-index: -4;
+  top: 0;
+  right: 0;
+  width: 900px;
+  height: 100vh;
+}
+
+/* Mentions légales */
+
+.container-mention {
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  width: 1400px;
+}
+
+.container-mention .content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  gap: 100px;
+}
+
+.container-mention h1 {
+  margin: 20px 0px 30px;
+  text-align: center;
+  color: var(--blue);
+}
+
+.container-mention p.date {
+  position: absolute;
+  top: 10%;
+  text-align: center;
+}
+
+.container-mention p.description {
+  margin: 100px 0px;
+}
+
+.container-mention h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.editeur,
+.hebergeur,
+.site,
+.donnees,
+.cookie,
+.propriete {
+  width: 400px;
+  text-align: justify;
+}
+
+.editeur h2,
+.hebergeur h2,
+.site h2,
+.donnees h2,
+.cookie h2,
+.propriete h2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  align-self: flex-start;
+  color: var(--blue);
+}
+
+p {
+  margin: 20px;
+}
+
+p a.back-to-home {
+  text-decoration: none;
+  color: white;
+  background: var(--blue);
+  padding: 10px;
+}
