@@ -121,7 +121,7 @@ main {
   width: 30%;
   transform: rotateY(180deg);
   padding: 10px;
-  align-self: flex-end;
+  margin-left: 350px;
 }
 
 .display .textWritting {
