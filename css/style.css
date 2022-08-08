@@ -118,6 +118,7 @@ main {
 
 .display .textWritting p {
   line-height: 30px;
+  margin: 0;
 }
 
 .display .textWritting p span {
