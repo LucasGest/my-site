@@ -19,6 +19,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 p,
 li,
 a {
@@ -52,12 +53,14 @@ main {
   margin: 300px 0px 100px;
 }
 
-.transition_bis {
+.transition_bis,
+.transition_ter {
   margin: 100px 0px 100px;
 }
 
 .transition h2,
-.transition_bis h2 {
+.transition_bis h2,
+.transition_ter h2 {
   text-align: center;
   color: var(--blue);
   text-transform: uppercase;
@@ -65,7 +68,8 @@ main {
 }
 
 .transition h2 span,
-.transition_bis h2 span {
+.transition_bis h2 span,
+.transition_ter h2 span {
   color: black;
   opacity: 0.3;
   padding: 0px 10px;
@@ -214,7 +218,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   column-gap: 70px;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   width: 1200px;
 }
 
@@ -303,6 +307,59 @@ main {
 }
 
 /* COMPETENCES */
+
+/* PROJETS */
+
+.projets {
+  margin: 100px 0px;
+}
+
+.projets .card_one {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5px 10px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.projets .card_one img {
+  width: 100%;
+  color: var(--blue);
+  height: 100%;
+}
+
+.projets .card_one p {
+  width: 700px;
+  text-align: justify;
+}
+
+.projets .card_one .content p.description {
+  color: var(--blue);
+  margin: 0px 0px 30px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.projets .card_one .link {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+
+.projets .card_one .link a {
+  text-decoration: none;
+  color: var(--blue);
+  padding: 15px 30px;
+  border: var(--blue) solid 1px;
+}
+
+.projets h4 {
+  text-align: center;
+  margin: 40px 0px;
+}
+
+/* PROJETS */
 
 /* FOOTER */
 
